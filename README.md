@@ -1,36 +1,34 @@
-# Generic Fast React Mongo Application Docker-Compose
-![logo](logo.png)
-## Goal
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-the goal of this project is to provide a git clonable docker compose project that is a single command to download and build the entire full stack FastAPI backend, React Frontend, Mongo Database.
+## Getting Started
 
+First, run the development server:
 
-## Commands to setup
-```
-git clone /path/to/FAST-REACT-MONGO-GENERIC /path/to/new/project/directory
-/bin/bash setup.sh          ## downloads all react files
-docker-compose up           ## to start up docker-compose
-docker-compose down         ## to take down docker-compose
-```
-# Commands to develop
-```
-download Dev Containers Extension
-ctrl+shift+p
-Dev Containers: Attach to running container
-Select: container name
-frontend
-```
-# Save container to image
-```
-docker commit 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-# reset git
-```
-git remote -v                                   ## see what current remote repository is called; default is origin
-git remote remove <remote-name> 
-git remote add <remote-name> <remote-url>       ## set remote-name to origin           
-git remote -v
-git push -u <remote-name> <branch-name>
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
