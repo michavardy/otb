@@ -17,7 +17,11 @@ const LoginContext = createContext<LoginContextProps>({
     setIsSignedIn: (): any => false,
 })
 
-export const LoginContextProvider = ({ children }) => {
+export const LoginContextProvider = ({
+    children,
+  }: {
+    children: React.ReactNode
+  }) => {
     const [userData, setUserData] = useState(null);
     const [isSignedIn, setIsSignedIn] = useState(false);
 
